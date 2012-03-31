@@ -68,5 +68,15 @@
       "status": "patch added",
       "comment": "Fixed problem with the red cross not displayin over the icons for unavailable sizes",
       "css_patch": "#ProductSizeButtons > .button > span[style*='background-image: url(\"http://www.c-and-a.com/de/de/shop/_/img/Product/redcross.png\")'] {top: 0}"
+  },
+  {
+      "patch_target": {
+          "domain": "empireonline.com",
+          "path": "100-greatest-movie-characters"
+      },
+      "opera_version": "11.62",
+      "status": "patch added",
+      "comment": "Background issue caused by centering fail: http://www.empireonline.com/100-greatest-movie-characters/",
+      "css_patch": "BODY > P[align='center'] + TABLE, BODY > TABLE[width='980'] {margin: auto;}"
   }
 ]
